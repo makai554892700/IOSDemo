@@ -19,7 +19,53 @@ class RootViewController: UIViewController {
         super.viewDidLoad()
         print("加载视图结束")
         createUILable()
+        createUIButton()
         // Do any additional setup after loading the view.
+    }
+    //创建UIButton
+    func createUIButton(){
+        //创建按钮对象
+        let btn: UIButton = UIButton(type: UIButtonType.system)
+        //设置坐标及大小
+        btn.frame = CGRect(x: 100, y: 200, width: 100, height: 100)
+        //设置按钮的背景颜色
+        btn.backgroundColor = UIColor.green
+        //设置按钮的文本
+        btn.setTitle("正常", for: UIControlState.normal)
+        btn.setTitle("高亮", for: UIControlState.highlighted)
+        btn.setTitle("选中", for: UIControlState.selected)
+        btn.setTitle("不可用", for: UIControlState.disabled)
+        //设置选中状态
+//        btn.isSelected = true
+        //设置可用状态
+//        btn.isEnabled = false
+        view.addSubview(btn)
+        //获取系统中字体
+        let fontsArray = UIFont.familyNames
+        //设置按钮上的字体
+        let fontName = "Zapfino"
+        if fontsArray.contains(fontName){
+            btn.titleLabel?.font = UIFont(name: fontName, size: 17)
+        }
+        //设置按钮的背景图片
+        btn.setBackgroundImage(UIImage(named: "1.png"), for: UIControlState.normal)
+        btn.setBackgroundImage(UIImage(named: "2.png"), for: UIControlState.highlighted)
+        //设置按钮的前景图片
+//        btn.setImage(UIImage(named: "3.png"), for: UIControlState.normal)
+//        btn.setImage(UIImage(named: "4.png"), for: UIControlState.highlighted)
+        //设置点击事件
+        btn.tag = 2000
+        btn.addTarget(self, action: #selector(btnClickFun(sender:)), for: UIControlEvents.touchUpInside)
+    }
+    //点击回调事件
+    @objc func btnClickFun(sender:UIButton?) {
+        let tag = sender?.tag
+        switch tag {
+        case 2000:
+            print("点击按钮")
+        default:
+            print("其他点击事件")
+        }
     }
     //创建UILabel（标签控件）
     //标签控件的作用为显示基本文本信息
