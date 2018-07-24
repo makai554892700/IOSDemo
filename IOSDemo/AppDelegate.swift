@@ -12,10 +12,20 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var rvc: RootViewController?
     //应用程序已经加载到内存时，点击应用按钮
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         print("应用程序被加载")
+        //初始化根视图
+        window = UIWindow(frame: UIScreen.main.bounds)
+        //初始化根视图控制器（一个根视图只可拥有一个根视图控制器，一个视图控制器可包含多个视图控制器）
+        rvc = RootViewController()
+        //根视图控制器绑定
+        window?.rootViewController = rvc
+        window?.backgroundColor = UIColor.white
+        //展示根视图
+        window?.makeKeyAndVisible()
         return true
     }
     //应用程序将要取消激活状态时，下拉状态栏，长按home键使程序进入预览界面

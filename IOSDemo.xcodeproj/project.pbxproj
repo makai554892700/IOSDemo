@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		A43C9D362106BE3200A5143A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C9D352106BE3200A5143A /* AppDelegate.swift */; };
-		A43C9D382106BE3200A5143A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C9D372106BE3200A5143A /* ViewController.swift */; };
-		A43C9D3B2106BE3200A5143A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43C9D392106BE3200A5143A /* Main.storyboard */; };
 		A43C9D3D2106BE3300A5143A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43C9D3C2106BE3300A5143A /* Assets.xcassets */; };
 		A43C9D402106BE3300A5143A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43C9D3E2106BE3300A5143A /* LaunchScreen.storyboard */; };
+		A43C9D482106CB2100A5143A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C9D472106CB2100A5143A /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A43C9D322106BE3200A5143A /* IOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43C9D352106BE3200A5143A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A43C9D372106BE3200A5143A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A43C9D3A2106BE3200A5143A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A43C9D3C2106BE3300A5143A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A43C9D3F2106BE3300A5143A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A43C9D412106BE3300A5143A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A43C9D472106CB2100A5143A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +53,10 @@
 			isa = PBXGroup;
 			children = (
 				A43C9D352106BE3200A5143A /* AppDelegate.swift */,
-				A43C9D372106BE3200A5143A /* ViewController.swift */,
-				A43C9D392106BE3200A5143A /* Main.storyboard */,
 				A43C9D3C2106BE3300A5143A /* Assets.xcassets */,
 				A43C9D3E2106BE3300A5143A /* LaunchScreen.storyboard */,
 				A43C9D412106BE3300A5143A /* Info.plist */,
+				A43C9D472106CB2100A5143A /* RootViewController.swift */,
 			);
 			path = IOSDemo;
 			sourceTree = "<group>";
@@ -124,7 +121,6 @@
 			files = (
 				A43C9D402106BE3300A5143A /* LaunchScreen.storyboard in Resources */,
 				A43C9D3D2106BE3300A5143A /* Assets.xcassets in Resources */,
-				A43C9D3B2106BE3200A5143A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A43C9D382106BE3200A5143A /* ViewController.swift in Sources */,
+				A43C9D482106CB2100A5143A /* RootViewController.swift in Sources */,
 				A43C9D362106BE3200A5143A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +139,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A43C9D392106BE3200A5143A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A43C9D3A2106BE3200A5143A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A43C9D3E2106BE3300A5143A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
