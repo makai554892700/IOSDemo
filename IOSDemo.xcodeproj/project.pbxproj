@@ -11,10 +11,7 @@
 		A43C9D3D2106BE3300A5143A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43C9D3C2106BE3300A5143A /* Assets.xcassets */; };
 		A43C9D402106BE3300A5143A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43C9D3E2106BE3300A5143A /* LaunchScreen.storyboard */; };
 		A43C9D482106CB2100A5143A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C9D472106CB2100A5143A /* RootViewController.swift */; };
-		A4BBB09121070F4200858587 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BBB08D21070F4100858587 /* 1.png */; };
-		A4BBB09221070F4200858587 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BBB08E21070F4200858587 /* 3.png */; };
-		A4BBB09321070F4200858587 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BBB08F21070F4200858587 /* 2.png */; };
-		A4BBB09421070F4200858587 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BBB09021070F4200858587 /* 4.png */; };
+		A4D554AE210AFD1B00A8D5DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D554AD210AFD1B00A8D5DD /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +21,7 @@
 		A43C9D3F2106BE3300A5143A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A43C9D412106BE3300A5143A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A43C9D472106CB2100A5143A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		A4BBB08D21070F4100858587 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../../../../Downloads/easyicon_201807240338562106/1.png; sourceTree = "<group>"; };
-		A4BBB08E21070F4200858587 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = ../../../../Downloads/easyicon_201807240338562106/3.png; sourceTree = "<group>"; };
-		A4BBB08F21070F4200858587 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = ../../../../Downloads/easyicon_201807240338562106/2.png; sourceTree = "<group>"; };
-		A4BBB09021070F4200858587 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = ../../../../Downloads/easyicon_201807240338562106/4.png; sourceTree = "<group>"; };
+		A4D554AD210AFD1B00A8D5DD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +56,10 @@
 			children = (
 				A43C9D352106BE3200A5143A /* AppDelegate.swift */,
 				A43C9D3C2106BE3300A5143A /* Assets.xcassets */,
-				A4BBB08D21070F4100858587 /* 1.png */,
-				A4BBB08F21070F4200858587 /* 2.png */,
-				A4BBB08E21070F4200858587 /* 3.png */,
-				A4BBB09021070F4200858587 /* 4.png */,
 				A43C9D3E2106BE3300A5143A /* LaunchScreen.storyboard */,
 				A43C9D412106BE3300A5143A /* Info.plist */,
 				A43C9D472106CB2100A5143A /* RootViewController.swift */,
+				A4D554AD210AFD1B00A8D5DD /* HomeViewController.swift */,
 			);
 			path = IOSDemo;
 			sourceTree = "<group>";
@@ -131,12 +122,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4BBB09421070F4200858587 /* 4.png in Resources */,
-				A4BBB09121070F4200858587 /* 1.png in Resources */,
 				A43C9D402106BE3300A5143A /* LaunchScreen.storyboard in Resources */,
-				A4BBB09321070F4200858587 /* 2.png in Resources */,
 				A43C9D3D2106BE3300A5143A /* Assets.xcassets in Resources */,
-				A4BBB09221070F4200858587 /* 3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +136,7 @@
 			files = (
 				A43C9D482106CB2100A5143A /* RootViewController.swift in Sources */,
 				A43C9D362106BE3200A5143A /* AppDelegate.swift in Sources */,
+				A4D554AE210AFD1B00A8D5DD /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,12 +9,18 @@
 import UIKit
 
 class RootViewController: UIViewController {
-    //加载视图
+    //常用控件
+    //UIButton 按钮 UILabel 文本标签 UITextField 文本输入框 UIImageView 图片显示 UIScrollView 滚动的控件
+    //UITableView 表格 UICollectionView 九宫格 UIWebView 网页显示控件 UIAlertView 对话框（中间弹框） UINavigationBar 导航条
+    //不常用控件
+    //UIPageControl 分页控件 UITextView 能滚动的文字显示控件 UIActivityIndicator 圈圈 UISwitch 开关 UIActionSheet 底部弹框
+    //UIDatePicker 日期选择器 UIToolbar 工具条 UIProgressView 进度条 UISlider 滑块 USegmentControl 选项卡 UIPickerView 选择器
+    //加载视图，尽量不要直接调用，因为由系统调用，如果要调用，不要重写loadView的父类
     override func loadView() {
         super.loadView()
         print("加载视图")
     }
-    //加载视图结束
+    //加载视图结束，只执行一次，类似Android onCreated
     override func viewDidLoad() {
         super.viewDidLoad()
         print("加载视图结束")
@@ -62,7 +68,10 @@ class RootViewController: UIViewController {
         let tag = sender?.tag
         switch tag {
         case 2000:
-            print("点击按钮")
+            let homeView = HomeViewController()
+            self.present(homeView, animated: true, completion: {
+                print("切换到另一个视图")
+            })
         default:
             print("其他点击事件")
         }
@@ -90,22 +99,22 @@ class RootViewController: UIViewController {
         //设置换行方式(按单词换行)亦可设置文字过长缩进时三个点显示位置
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
     }
-    //视图即将显示
+    //视图即将显示，类似onResume
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("视图即将显示")
     }
-    //视图已经显示
+    //视图已经显示，类似onResume
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         print("视图已经显示")
     }
-    //视图即将消失
+    //视图即将消失，类似onPause，可以做一下小动画在界面消失前
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         print("视图即将消失")
     }
-    //视图已经消失
+    //视图已经消失，类似onPause
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         print("视图已经消失")
