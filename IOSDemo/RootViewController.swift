@@ -71,7 +71,8 @@ class RootViewController: UIViewController {
 //            let homeView = HomeViewController()
 //            let homeView = MyUINavigationController()
 //            let homeView = MyUITabBarControllerViewController()
-            let homeView = DataTestViewController()
+//            let homeView = DataTestViewController()
+            let homeView = OutMessageViewController()
             self.present(homeView, animated: true, completion: {
                 print("切换到另一个视图")
             })

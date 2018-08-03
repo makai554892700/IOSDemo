@@ -23,6 +23,8 @@
 		A4DA352E2113EF6C00EBE16C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA352D2113EF6C00EBE16C /* UserInfo.swift */; };
 		A4DA35302113F09E00EBE16C /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA352F2113F09E00EBE16C /* DataModel.swift */; };
 		A4DA35322113F38F00EBE16C /* DataTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA35312113F38F00EBE16C /* DataTestViewController.swift */; };
+		A4DA35352114048100EBE16C /* InMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA35342114048100EBE16C /* InMessageViewController.swift */; };
+		A4DA35372114048F00EBE16C /* OutMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA35362114048F00EBE16C /* OutMessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		A4DA352D2113EF6C00EBE16C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		A4DA352F2113F09E00EBE16C /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		A4DA35312113F38F00EBE16C /* DataTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTestViewController.swift; sourceTree = "<group>"; };
+		A4DA35342114048100EBE16C /* InMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMessageViewController.swift; sourceTree = "<group>"; };
+		A4DA35362114048F00EBE16C /* OutMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutMessageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 		A43C9D342106BE3200A5143A /* IOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A4DA35332114045F00EBE16C /* message_controller */,
 				A4DA352C2113EF5900EBE16C /* Pojo */,
 				A4DA352B2113EF4B00EBE16C /* Utils */,
 				A44DE9D8210B18D1007587E4 /* controller */,
@@ -135,6 +140,15 @@
 				A4DA352F2113F09E00EBE16C /* DataModel.swift */,
 			);
 			path = Pojo;
+			sourceTree = "<group>";
+		};
+		A4DA35332114045F00EBE16C /* message_controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4DA35342114048100EBE16C /* InMessageViewController.swift */,
+				A4DA35362114048F00EBE16C /* OutMessageViewController.swift */,
+			);
+			path = message_controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +226,7 @@
 				A44DE9CE210B1680007587E4 /* MyUINavigationController.swift in Sources */,
 				A43C9D482106CB2100A5143A /* RootViewController.swift in Sources */,
 				A4DA352E2113EF6C00EBE16C /* UserInfo.swift in Sources */,
+				A4DA35372114048F00EBE16C /* OutMessageViewController.swift in Sources */,
 				A44DE9D5210B188D007587E4 /* BlueTBViewController.swift in Sources */,
 				A4DA35302113F09E00EBE16C /* DataModel.swift in Sources */,
 				A44DE9D3210B1873007587E4 /* RedTBViewController.swift in Sources */,
@@ -219,6 +234,7 @@
 				A44DE9DA210B191C007587E4 /* MyUITabBarControllerViewController.swift in Sources */,
 				A43C9D362106BE3200A5143A /* AppDelegate.swift in Sources */,
 				A44DE9C9210B0758007587E4 /* BlueViewController.swift in Sources */,
+				A4DA35352114048100EBE16C /* InMessageViewController.swift in Sources */,
 				A44DE9D7210B189D007587E4 /* GreenTBViewController.swift in Sources */,
 				A4D554AE210AFD1B00A8D5DD /* HomeViewController.swift in Sources */,
 			);
