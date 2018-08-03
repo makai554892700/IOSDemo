@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62DB7339513876D626406AF9 /* SingleClickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DB7C2E151EB7BE76561C6B /* SingleClickViewController.swift */; };
 		A43C9D362106BE3200A5143A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C9D352106BE3200A5143A /* AppDelegate.swift */; };
 		A43C9D3D2106BE3300A5143A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43C9D3C2106BE3300A5143A /* Assets.xcassets */; };
 		A43C9D402106BE3300A5143A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43C9D3E2106BE3300A5143A /* LaunchScreen.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62DB7C2E151EB7BE76561C6B /* SingleClickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleClickViewController.swift; sourceTree = "<group>"; };
 		A43C9D322106BE3200A5143A /* IOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43C9D352106BE3200A5143A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A43C9D3C2106BE3300A5143A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62DB772C15C145FA206DB4DC /* gesture_controller */ = {
+			isa = PBXGroup;
+			children = (
+				62DB7C2E151EB7BE76561C6B /* SingleClickViewController.swift */,
+			);
+			path = gesture_controller;
+			sourceTree = "<group>";
+		};
 		A43C9D292106BE3200A5143A = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 				A43C9D3E2106BE3300A5143A /* LaunchScreen.storyboard */,
 				A43C9D412106BE3300A5143A /* Info.plist */,
 				A43C9D472106CB2100A5143A /* RootViewController.swift */,
+				62DB772C15C145FA206DB4DC /* gesture_controller */,
 			);
 			path = IOSDemo;
 			sourceTree = "<group>";
@@ -237,6 +248,7 @@
 				A4DA35352114048100EBE16C /* InMessageViewController.swift in Sources */,
 				A44DE9D7210B189D007587E4 /* GreenTBViewController.swift in Sources */,
 				A4D554AE210AFD1B00A8D5DD /* HomeViewController.swift in Sources */,
+				62DB7339513876D626406AF9 /* SingleClickViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
