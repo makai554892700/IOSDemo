@@ -20,6 +20,9 @@
 		A44DE9D7210B189D007587E4 /* GreenTBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DE9D6210B189D007587E4 /* GreenTBViewController.swift */; };
 		A44DE9DA210B191C007587E4 /* MyUITabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DE9D9210B191C007587E4 /* MyUITabBarControllerViewController.swift */; };
 		A4D554AE210AFD1B00A8D5DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D554AD210AFD1B00A8D5DD /* HomeViewController.swift */; };
+		A4DA352E2113EF6C00EBE16C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA352D2113EF6C00EBE16C /* UserInfo.swift */; };
+		A4DA35302113F09E00EBE16C /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA352F2113F09E00EBE16C /* DataModel.swift */; };
+		A4DA35322113F38F00EBE16C /* DataTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA35312113F38F00EBE16C /* DataTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		A44DE9D6210B189D007587E4 /* GreenTBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenTBViewController.swift; sourceTree = "<group>"; };
 		A44DE9D9210B191C007587E4 /* MyUITabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUITabBarControllerViewController.swift; sourceTree = "<group>"; };
 		A4D554AD210AFD1B00A8D5DD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A4DA352D2113EF6C00EBE16C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		A4DA352F2113F09E00EBE16C /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		A4DA35312113F38F00EBE16C /* DataTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,8 @@
 		A43C9D342106BE3200A5143A /* IOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A4DA352C2113EF5900EBE16C /* Pojo */,
+				A4DA352B2113EF4B00EBE16C /* Utils */,
 				A44DE9D8210B18D1007587E4 /* controller */,
 				A44DE9CF210B180B007587E4 /* tab_bar_controller */,
 				A44DE9C5210B0726007587E4 /* ui_navigation_controller */,
@@ -108,8 +116,25 @@
 				A4D554AD210AFD1B00A8D5DD /* HomeViewController.swift */,
 				A44DE9CD210B1680007587E4 /* MyUINavigationController.swift */,
 				A44DE9D9210B191C007587E4 /* MyUITabBarControllerViewController.swift */,
+				A4DA35312113F38F00EBE16C /* DataTestViewController.swift */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		A4DA352B2113EF4B00EBE16C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A4DA352C2113EF5900EBE16C /* Pojo */ = {
+			isa = PBXGroup;
+			children = (
+				A4DA352D2113EF6C00EBE16C /* UserInfo.swift */,
+				A4DA352F2113F09E00EBE16C /* DataModel.swift */,
+			);
+			path = Pojo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,8 +211,11 @@
 				A44DE9C7210B074A007587E4 /* RedViewController.swift in Sources */,
 				A44DE9CE210B1680007587E4 /* MyUINavigationController.swift in Sources */,
 				A43C9D482106CB2100A5143A /* RootViewController.swift in Sources */,
+				A4DA352E2113EF6C00EBE16C /* UserInfo.swift in Sources */,
 				A44DE9D5210B188D007587E4 /* BlueTBViewController.swift in Sources */,
+				A4DA35302113F09E00EBE16C /* DataModel.swift in Sources */,
 				A44DE9D3210B1873007587E4 /* RedTBViewController.swift in Sources */,
+				A4DA35322113F38F00EBE16C /* DataTestViewController.swift in Sources */,
 				A44DE9DA210B191C007587E4 /* MyUITabBarControllerViewController.swift in Sources */,
 				A43C9D362106BE3200A5143A /* AppDelegate.swift in Sources */,
 				A44DE9C9210B0758007587E4 /* BlueViewController.swift in Sources */,
