@@ -20,6 +20,7 @@ class RootViewController: UIViewController {
         super.loadView()
         print("加载视图")
     }
+
     //加载视图结束，只执行一次，类似Android onCreated
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +29,9 @@ class RootViewController: UIViewController {
         createUIButton()
         // Do any additional setup after loading the view.
     }
+
     //创建UIButton
-    func createUIButton(){
+    func createUIButton() {
         //创建按钮对象
         let btn: UIButton = UIButton(type: UIButtonType.system)
         //设置坐标及大小
@@ -50,7 +52,7 @@ class RootViewController: UIViewController {
         let fontsArray = UIFont.familyNames
         //设置按钮上的字体
         let fontName = "Zapfino"
-        if fontsArray.contains(fontName){
+        if fontsArray.contains(fontName) {
             btn.titleLabel?.font = UIFont(name: fontName, size: 17)
         }
         //设置按钮的背景图片
@@ -63,8 +65,9 @@ class RootViewController: UIViewController {
         btn.tag = 2000
         btn.addTarget(self, action: #selector(btnClickFun(sender:)), for: UIControlEvents.touchUpInside)
     }
+
     //点击回调事件
-    @objc func btnClickFun(sender:UIButton?) {
+    @objc func btnClickFun(sender: UIButton?) {
         let tag = sender?.tag
         switch tag {
         case 2000:
@@ -74,7 +77,8 @@ class RootViewController: UIViewController {
 //            let homeView = DataTestViewController()
 //            let homeView = OutMessageViewController()
 //            let homeView = SingleClickViewController()
-            let homeView = HttpViewController()
+//            let homeView = HttpViewController()
+            let homeView = LocationViewController()
             self.present(homeView, animated: true, completion: {
                 print("切换到另一个视图")
             })
@@ -82,11 +86,12 @@ class RootViewController: UIViewController {
             print("其他点击事件")
         }
     }
+
     //创建UILabel（标签控件）
     //标签控件的作用为显示基本文本信息
-    func createUILable(){
+    func createUILable() {
         //创建标签
-        let label:UILabel = UILabel(frame: CGRect(x: 50, y: 50, width: 300, height: 130))
+        let label: UILabel = UILabel(frame: CGRect(x: 50, y: 50, width: 300, height: 130))
         //设置标签控件背景颜色
         label.backgroundColor = UIColor.red
         //设置标签控件中文信息
@@ -105,33 +110,38 @@ class RootViewController: UIViewController {
         //设置换行方式(按单词换行)亦可设置文字过长缩进时三个点显示位置
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
     }
+
     //视图即将显示，类似onResume
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("视图即将显示")
     }
+
     //视图已经显示，类似onResume
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         print("视图已经显示")
     }
+
     //视图即将消失，类似onPause，可以做一下小动画在界面消失前
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         print("视图即将消失")
     }
+
     //视图已经消失，类似onPause
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         print("视图已经消失")
     }
+
     //接收到内存警告
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
         print("接收到内存警告")
     }
-    
+
 
     /*
     // MARK: - Navigation

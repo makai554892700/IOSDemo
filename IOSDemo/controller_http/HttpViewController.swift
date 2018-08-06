@@ -14,6 +14,8 @@ class HttpViewController: UIViewController, NSURLConnectionDataDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //发送网络请求需要添加权限
+        //"App Transport Security Settings" 下 "Allow Arbitrary Loads" 设置为 "YES"
 //        testGet()
         testPost()
     }
