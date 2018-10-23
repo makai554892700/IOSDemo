@@ -79,7 +79,8 @@ class RootViewController: UIViewController {
 //            let homeView = SingleClickViewController()
 //            let homeView = HttpViewController()
 //            let homeView = LocationViewController()
-            let homeView = MapKitViewController()
+//            let homeView = MapKitViewController()
+            let homeView = SlideViewController()
             self.present(homeView, animated: true, completion: {
                 print("切换到另一个视图")
             })
