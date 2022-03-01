@@ -1,0 +1,16 @@
+PODS:
+  - HandyJSON (5.0.2)
+
+DEPENDENCIES:
+  - HandyJSON (~> 5.0.2)
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - HandyJSON
+
+SPEC CHECKSUMS:
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+
+PODFILE CHECKSUM: a97cf28c7ec9b800a1da3ec435af384f1fa4acbd
+
+COCOAPODS: 1.11.2
